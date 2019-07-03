@@ -33,7 +33,7 @@ body {
   text-align: center;
 }
 
-.btn{
+.btn {
   text-decoration: none;
   padding: 15px 15px 15px 15px;
   border: 2px solid white;
@@ -41,7 +41,7 @@ body {
   margin-left: 20px;
 }
 
-.btn:hover{
+.btn:hover {
   transition: all 500ms;
   color: black;
   background: white;
@@ -111,21 +111,21 @@ body {
 }
 
 /* About */
-#about{
+#about {
   height: 45vh;
 }
 
-#about .container{
+#about .container {
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
-.about-text{
+.about-text {
   line-height: 1.7em;
   margin-bottom: 45px;
 }
 
-.title{
+.title {
   font-size: 2rem;
 }
 
@@ -133,6 +133,7 @@ body {
 .portfolio {
   width: 100%;
   margin: 0;
+  margin-top: 50px;
 }
 
 .project {
@@ -187,30 +188,29 @@ body {
 }
 
 .column#caption:hover img {
-  -webkit-filter: brightness(70%)  grayscale(0%);
+  -webkit-filter: brightness(70%) grayscale(0%);
 }
 
 /* Contattami */
-
-#contatti{
+#contatti {
   height: 10vh;
 }
 
-address{
+address {
   margin-left: 50px;
 }
 
-.grid-contattami{
+.grid-contattami {
   display: flex;
   justify-content: center;
 }
 
-#contattami a{
+#contattami a {
   text-decoration: none;
   color: white;
 }
 
-#contattami a:hover{
+#contattami a:hover {
   text-decoration: underline;
 }
 
@@ -237,16 +237,14 @@ address{
     line-height: 1;
   }
 
-  #about{
+  #about {
     height: 100vh;
-
   }
 
-  .button-grid{
+  .button-grid {
     display: grid;
     grid-template-columns: 1fr;
   }
-
 
   .project-grid {
     display: grid;
@@ -260,13 +258,12 @@ address{
     font-size: 1.5rem;
   }
 
-  .grid-contattami{
+  .grid-contattami {
     display: inline;
   }
 
-  address{
+  address {
     margin-bottom: 10px;
     margin-left: 0px;
   }
-
 }
