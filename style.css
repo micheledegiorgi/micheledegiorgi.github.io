@@ -225,7 +225,6 @@ address{
 
   #about{
     margin-bottom: 200px;
-
   }
 
   .button-grid{
@@ -247,8 +246,6 @@ address{
     margin-left: 25px;
   }
 
-
-
   .content {
     position: absolute;
     z-index: 1;
@@ -258,5 +255,10 @@ address{
     margin-left: -325px;
     text-align: center;
     transition: all 1000ms;
+  }
+
+  .heading {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
