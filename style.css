@@ -215,7 +215,7 @@ address{
 }
 
 /* Media queries */
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 560px) {
   .container {
     max-width: 800px;
     margin: auto;
@@ -224,14 +224,22 @@ address{
     text-align: center;
   }
 
-  #about{
-    height: 100vh;
-    margin-bottom: 250px;
+  .content {
+    top: 30%;
+    left: 100%;
+    margin-top: 3%;
+    text-align: center;
+    transition: all 1000ms;
   }
 
-  #about .container{
-    margin-top: 10px;
+  .heading {
+    font-size: 3rem;
+    line-height: 1;
+  }
 
+  #about{
+    height: 100vh;
+    margin-bottom: 100px;
   }
 
   .button-grid{
@@ -253,23 +261,12 @@ address{
   }
 
   .grid-contattami{
-    flex: none;
+    flex: 1;
   }
 
   address{
     margin-left: 25px;
   }
 
-  .content {
-    top: 30%;
-    left: 110%;
-    margin-top: 3%;
-    text-align: center;
-    transition: all 1000ms;
-  }
 
-  .heading {
-    font-size: 3rem;
-    line-height: 1;
-  }
 }
