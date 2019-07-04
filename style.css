@@ -272,16 +272,6 @@ address {
 @media only screen and (max-width: 580px) {
   #about {
     height: 100vh;
-  }
-}
-
-/* landscape */
-@media only screen and (max-height: 550px) {
-  .content .heading {
-    display: none;
-  }
-
-  .content {
-    top: 0;
+    margin-bottom: 200px;
   }
 }
