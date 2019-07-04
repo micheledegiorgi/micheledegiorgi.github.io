@@ -237,13 +237,13 @@ address {
     line-height: 1;
   }
 
+  #about {
+    height: 100%;
+  }
+
   .button-grid {
     display: grid;
     grid-template-columns: 1fr;
-  }
-
-  .portfolio {
-    margin-top: 175px;
   }
 
   .project-grid {
