@@ -267,11 +267,3 @@ address {
     margin-left: 0px;
   }
 }
-
-/* landscape */
-@media only screen and (max-width: 580px) {
-  #about {
-    height: 100vh;
-    margin-bottom: 200px;
-  }
-}
