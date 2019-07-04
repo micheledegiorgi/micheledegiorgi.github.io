@@ -215,7 +215,7 @@ address {
 }
 
 /* Media queries */
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 860px) {
   .container {
     max-width: 800px;
     margin: auto;
@@ -237,13 +237,13 @@ address {
     line-height: 1;
   }
 
-  #about {
-    height: 100vh;
-  }
-
   .button-grid {
     display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .portfolio {
+    margin-top: 175px;
   }
 
   .project-grid {
@@ -265,5 +265,23 @@ address {
   address {
     margin-bottom: 10px;
     margin-left: 0px;
+  }
+}
+
+/* landscape */
+@media only screen and (max-width: 580px) {
+  #about {
+    height: 100vh;
+  }
+}
+
+/* landscape */
+@media only screen and (max-height: 550px) {
+  .content .heading {
+    display: none;
+  }
+
+  .content {
+    top: 0;
   }
 }
