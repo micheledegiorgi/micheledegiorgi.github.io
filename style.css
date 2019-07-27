@@ -196,15 +196,6 @@ body {
   height: 10vh;
 }
 
-address {
-  margin-left: 50px;
-}
-
-.grid-contattami {
-  display: flex;
-  justify-content: center;
-}
-
 #contattami a {
   text-decoration: none;
   color: white;
