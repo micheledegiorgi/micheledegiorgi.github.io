@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+
+:root {
+  --clr-background: #0a0908;
+  --clr-primary: #fca311;
+  --clr-text: #ffffff;
+  --clr-daccent: #14213d;
+  --clr-laccent: #33393f;
+  --ff-head: "Rubik", sans-serif;
+  --ff-body: "Karla", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--clr-background);
+  color: var(--clr-text);
+  font-size: 1emm;
+  font-family: 'Rubik', 'Karla', sans-serif;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 15px 15px 15px 15px;
+  border: 2px solid white;
+  color: white;
+  margin-left: 20px;
+}
+
+.btn:hover {
+  transition: all 500ms;
+  color: black;
+  background: white;
+}
+
+/* Showcase */
+.showcase::after {
+  content: '';
+  height: 100vh;
+  background-image: url(img/showcase.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  transition: all 1000ms;
+}
+
+.showcase:hover::after {
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+}
+
+.content {
+  position: absolute;
+  z-index: 1;
+  top: 30%;
+  left: 50%;
+  margin-top: 3%;
+  margin-left: -325px;
+  text-align: center;
+  transition: all 1000ms;
+}
+
+.heading {
+  font-size: 5rem;
+  line-height: 1;
+}
+
+/* Arrow Animation */
+.arrow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.arrow {
+  position: relative;
+  display: inline-block;
+  animation: bounce 1.1s linear infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-30px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* About */
+#about {
+  height: 60vh;
+}
+
+#about .container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.about-text {
+  line-height: 1.7em;
+  margin-bottom: 45px;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+/* Portfolio */
+.portfolio {
+  width: 100%;
+  margin: 0;
+  margin-top: 50px;
+}
+
+.project {
+  margin-top: -7px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  overflow: hidden;
+}
+
+.project img {
+  width: 100%;
+}
+
+.column {
+  display: inline-block;
+  text-align: center;
+}
+
+.column#caption {
+  position: relative;
+}
+
+.column#caption .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+
+.column#caption img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  -webkit-filter: grayscale(100%);
+}
+
+.column#caption .text h3 {
+  margin: 0;
+  color: white;
+  font-size: 2rem;
+}
+
+.column#caption:hover .text {
+  opacity: 1;
+}
+
+.column#caption:hover img {
+  -webkit-filter: brightness(70%) grayscale(0%);
+}
+
+/* Contattami */
+#contatti {
+  height: 10vh;
+}
+
+#contattami a {
+  text-decoration: none;
+  color: white;
+}
+
+#contattami a:hover {
+  text-decoration: underline;
+}
+
+/* Media queries */
+@media only screen and (max-width: 860px) {
+  .container {
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    padding: 4rem 1rem;
+    text-align: center;
+  }
+
+  .content {
+    top: 30%;
+    left: 90%;
+    margin-top: 3%;
+    text-align: center;
+    transition: all 1000ms;
+  }
+
+  .heading {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  #about {
+    height: 100%;
+  }
+
+  .button-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    overflow: hidden;
+  }
+
+  .column#caption .text h3 {
+    margin: 0;
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  .grid-contattami {
+    display: inline;
+  }
+
+  address {
+    margin-bottom: 10px;
+    margin-left: 0px;
+  }
+}
