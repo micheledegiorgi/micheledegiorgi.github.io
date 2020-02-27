@@ -116,8 +116,8 @@ body {
 }
 
 #about .container {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
 .about-text {
@@ -133,7 +133,7 @@ body {
 .portfolio {
   width: 100%;
   margin: 0;
-  margin-top: 50px;
+  margin-top: 10vh;
 }
 
 .project {
@@ -206,6 +206,13 @@ body {
 }
 
 /* Media queries */
+@media only screen and (max-width: 1300px) {
+  #about {
+    height: 80vh;
+  }
+}
+
+
 @media only screen and (max-width: 860px) {
   .container {
     max-width: 800px;
@@ -217,7 +224,7 @@ body {
 
   .content {
     top: 30%;
-    left: 90%;
+    left: 70%;
     margin-top: 3%;
     text-align: center;
     transition: all 1000ms;
