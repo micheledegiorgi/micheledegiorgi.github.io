@@ -224,14 +224,14 @@ body {
 
   .content {
     top: 30%;
-    left: 50%;
+    left: 65%;
     margin-top: 3%;
     text-align: center;
     transition: all 1000ms;
   }
 
   .heading {
-    font-size: 2rem;
+    font-size: 3rem;
     line-height: 1;
   }
 
@@ -263,5 +263,28 @@ body {
   address {
     margin-bottom: 10px;
     margin-left: 0px;
+  }
+}
+
+@media only screen and (min-width: 360px) {
+  .container {
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    padding: 4rem 1rem;
+    text-align: center;
+  }
+
+  .content {
+    top: 30%;
+    left: 95%;
+    margin-top: 3%;
+    text-align: center;
+    transition: all 1000ms;
+  }
+
+  .heading {
+    font-size: 2rem;
+    line-height: 1;
   }
 }
