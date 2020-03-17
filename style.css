@@ -265,10 +265,6 @@ body {
   }
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> dd1d9263d7a4acd20f8f3ff6024d068c6dae7579
 @media only screen and (max-width: 360px) {
   .container {
     max-width: 800px;
@@ -280,11 +276,7 @@ body {
 
   .content {
     top: 30%;
-<<<<<<< HEAD
     left: 100%;
-=======
-    left: 95%;
->>>>>>> dd1d9263d7a4acd20f8f3ff6024d068c6dae7579
     margin-top: 3%;
     text-align: center;
     transition: all 1000ms;
